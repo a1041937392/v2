@@ -64,10 +64,10 @@ fi
 #Run Install
 cd /root
 
-curl -L  -k ttps://raw.githubusercontent.com/a1041937392/v2/master/go.sh > /root/go.sh 
+curl -L  -k https://raw.githubusercontent.com/a1041937392/v2/master/go.sh > /root/go.sh 
 if [ ! -s /root/go.sh ]; then
 	rm -f /root/go.sh
-	wget --no-check-certificate ttps://raw.githubusercontent.com/a1041937392/v2/master/go.sh
+	wget --no-check-certificate https://raw.githubusercontent.com/a1041937392/v2/master/go.sh
 fi
 chmod +x "/root/go.sh"
 echo "V2Ray 安装 $version"
@@ -83,10 +83,10 @@ echo '删除 V2ray 请稍候！'
 
 cd /root
 
-curl -L  -k ttps://raw.githubusercontent.com/a1041937392/v2/master/go.sh > /root/go.sh 
+curl -L  -k https://raw.githubusercontent.com/a1041937392/v2/master/go.sh > /root/go.sh 
 if [ ! -s /root/go.sh ]; then
 	rm -f /root/go.sh
-	wget --no-check-certificate ttps://raw.githubusercontent.com/a1041937392/v2/master/go.sh
+	wget --no-check-certificate https://raw.githubusercontent.com/a1041937392/v2/master/go.sh
 fi
 chmod +x "/root/go.sh"
 /root/go.sh --remove
@@ -107,10 +107,10 @@ if [ -n "${SERVICE_CMD}" ] && [ -f "/etc/init.d/v2ray" ]; then
 	${SERVICE_CMD} v2ray stop
 fi
 
-curl -L -s -k ttps://raw.githubusercontent.com/a1041937392/v2/master/go.sh > /root/go.sh 
+curl -L -s -k https://raw.githubusercontent.com/a1041937392/v2/master/go.sh > /root/go.sh 
 if [ ! -s /root/go.sh ]; then
 	rm -f /root/go.sh
-	wget --no-check-certificate ttps://raw.githubusercontent.com/a1041937392/v2/master/go.sh
+	wget --no-check-certificate https://raw.githubusercontent.com/a1041937392/v2/master/go.sh
 fi
 chmod +x "/root/go.sh"
 echo "V2Ray 安装 $version"
